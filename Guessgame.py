@@ -1,31 +1,4 @@
-"""print("Guess the number between 1 & 100")
-answer = 50
-chances = 0
-while chances < 5:
-    chances +=1
-    guess = int(input("Guess the number here: "))
-    if answer == guess:
-        print("you have guessed the correct number")
-        break
-    elif answer != guess:
-        print("you have guessed it wrong!")
-        print(f"you have {5-chances} left")
-    else: 
-        print("you lost")"""
 from random import randint
-"""answer = randint(0,100)
-print(answer)
-chances = 0
-import math as maths
-highestrange = randint(50,100)
-print(highestrange)
-lowestrange = randint(0,50 )
-print(lowestrange)
-desiredrange= highestrange - lowestrange
-desiredrange
-noofchances = round(maths.log(desiredrange))
-noofchances"""
-
 import math
 startingpoint, endingpoint= map(int,input("Choose a starting point and ending point: ").split(" "))
 answer = randint(startingpoint,endingpoint)
